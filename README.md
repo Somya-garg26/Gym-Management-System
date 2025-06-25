@@ -91,5 +91,8 @@ AFTER LOGIN IT WILL SHOW THE RECEIPTS OF THE LOGIN MEMBER
 BY CLICKING LOGOUT MEMBERS CAN LOGOUT THEMSELVES
 ![Image](https://github.com/user-attachments/assets/0d99d60e-ac2c-4a5e-b4d4-c9c92a08897b)
 
+##REPORT OF MY PROJECT:
+[Gym Management System.pdf](https://github.com/user-attachments/files/20898156/Gym.Management.System.pdf)
+
 ## Credits
 This project was developed by Somya Garg as part of an internship project for demonstrating front-end development skills in a real-world context.
