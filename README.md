@@ -70,25 +70,26 @@ ABOUT PRICING PLAN
 BY CLICKING ON JOIN NOW YOU CAN REGISTER YOURSELF
 ![Image](https://github.com/user-attachments/assets/a6670c68-81ad-4028-a541-4a4ac5e20830)
 
-
 ![Image](https://github.com/user-attachments/assets/9c63fd3d-9003-49cc-b571-403804d24796)
 
 ![Image](https://github.com/user-attachments/assets/c4568118-d618-48c1-aef5-51996fb36210)
 
+BY CLICKING MEMBER LOGIN A LOGIN PAGE WILL APPEAR AND MEMBERS CAN LOGIN HERE
 ![Image](https://github.com/user-attachments/assets/4392820f-930e-48b3-aab3-7ca89bba5c86)
 
+BY CLICKING REGISTER BUTTON A REGISTER PAGE WILL APPEAR WHERE ANYONE CAN REGISTER
 ![Image](https://github.com/user-attachments/assets/1d378a3f-1272-4ae5-b9d8-e3ffecc947a1)
 
 ![Image](https://github.com/user-attachments/assets/240aa4c7-1d07-4a17-b6cb-e8ef7fdc4318)
 
+ON CLICKING RECEIPT FIRSTLY IT WILL ASK FOR LOGIN 
 ![Image](https://github.com/user-attachments/assets/806e84a4-0328-4a7d-891b-faadd18569e7)
 
+AFTER LOGIN IT WILL SHOW THE RECEIPTS OF THE LOGIN MEMBER
 ![Image](https://github.com/user-attachments/assets/f2eeda46-6c2f-4f88-87c9-3eb2d0d8a5b3)
 
+BY CLICKING LOGOUT MEMBERS CAN LOGOUT THEMSELVES
 ![Image](https://github.com/user-attachments/assets/0d99d60e-ac2c-4a5e-b4d4-c9c92a08897b)
-
-
-
 
 ## Credits
 This project was developed by Somya Garg as part of an internship project for demonstrating front-end development skills in a real-world context.
