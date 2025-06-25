@@ -46,27 +46,46 @@ A modern, responsive, and user-friendly Gym Management System Website built usin
 
 ##Screenshots of My Project:-
 
+HOME PAGE 
 ![Image](https://github.com/user-attachments/assets/c090a2b1-1d55-47fb-a19d-a1ce949e4927)
 
+CLICKING ON "JOIN NOW" AND "GET STARTED" AN REGISTER PAGE WILL APPEAR
 ![Image](https://github.com/user-attachments/assets/e6116687-a6f5-43b4-94f6-742f6574e5eb)
 
+EXPLORE VARIOUS PROGRAMS
 ![Image](https://github.com/user-attachments/assets/c7d7e34f-165c-492b-accf-8f9abf5edd8e)
 
+BOOK A CLASS
 ![Image](https://github.com/user-attachments/assets/3296a6ba-619c-4fc2-8966-969a13928359)
 
+CLICKING ON BOOK A CLASS A PAGE WILL APPEAR WHERE MEMBERS CAN BOOK A CLASS
 ![Image](https://github.com/user-attachments/assets/b2d72fac-164b-4fe1-93e3-077e96774cfc)
 
+ABOUT THE GYM
 ![Image](https://github.com/user-attachments/assets/2694d024-249d-48f9-9fde-523b9865ad96)
 
+ABOUT PRICING PLAN 
 ![Image](https://github.com/user-attachments/assets/664b13cc-a438-45ae-b53e-f66c6caceac6)
 
+BY CLICKING ON JOIN NOW YOU CAN REGISTER YOURSELF
 ![Image](https://github.com/user-attachments/assets/a6670c68-81ad-4028-a541-4a4ac5e20830)
+
 
 ![Image](https://github.com/user-attachments/assets/9c63fd3d-9003-49cc-b571-403804d24796)
 
 ![Image](https://github.com/user-attachments/assets/c4568118-d618-48c1-aef5-51996fb36210)
 
+![Image](https://github.com/user-attachments/assets/4392820f-930e-48b3-aab3-7ca89bba5c86)
 
+![Image](https://github.com/user-attachments/assets/1d378a3f-1272-4ae5-b9d8-e3ffecc947a1)
+
+![Image](https://github.com/user-attachments/assets/240aa4c7-1d07-4a17-b6cb-e8ef7fdc4318)
+
+![Image](https://github.com/user-attachments/assets/806e84a4-0328-4a7d-891b-faadd18569e7)
+
+![Image](https://github.com/user-attachments/assets/f2eeda46-6c2f-4f88-87c9-3eb2d0d8a5b3)
+
+![Image](https://github.com/user-attachments/assets/0d99d60e-ac2c-4a5e-b4d4-c9c92a08897b)
 
 
 
