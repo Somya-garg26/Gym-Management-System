@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #111317;
+  color: #ffffff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 40px 20px;
+}
+
+/* Headings */
+h1, h2, h3 {
+  color: #f9ac54;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Form Inputs */
+input {
+  display: block;
+  width: 100%;
+  max-width: 300px;
+  padding: 12px 15px;
+  margin: 10px 0;
+  border: 1px solid #f9ac54;
+  border-radius: 5px;
+  background-color: #1f2125;
+  color: #ffffff;
+}
+
+/* Buttons */
+button {
+  background-color: #f9ac54;
+  color: #111317;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 10px 0;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #d79447;
+}
+
+/* Navigation */
+nav {
+  margin: 20px 0;
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  color: #f9ac54;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #ffffff;
+}
+
+/* Receipt List */
+#receipt-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+  width: 100%;
+  max-width: 400px;
+}
+
+#receipt-list li {
+  background-color: #1f2125;
+  border: 1px solid #f9ac54;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  padding: 10px 15px;
+}
+
+/* Alert Box (Optional Styling for future use) */
+.alert {
+  background-color: #d79447;
+  color: #111317;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 600px) {
+  input, button {
+    width: 100%;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+}

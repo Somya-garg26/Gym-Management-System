@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Receipts - Gym</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <script>
+    if (localStorage.getItem('gymLoggedIn') !== 'true') {
+      alert('Login required');
+      window.location.href = 'member-login.html';
+    }
+  </script>
+
+  <h2>Receipts</h2>
+  <input type="text" id="receipt-date" placeholder="Date (YYYY-MM-DD)" required>
+  <input type="number" id="receipt-amount" placeholder="Amount Paid" required>
+  <button onclick="saveReceipt()">Save Receipt</button>
+
+  <h3>Your Receipts:</h3>
+  <ul id="receipt-list"></ul>
+
+  <script>
+    function saveReceipt() {
+      const date = document.getElementById('receipt-date').value;
+      const amount = document.getElementById('receipt-amount').value;
+      let receipts = JSON.parse(localStorage.getItem('gymReceipts')) || [];
+      receipts.push({ date, amount });
+      localStorage.setItem('gymReceipts', JSON.stringify(receipts));
+      displayReceipts();
+    }
+
+    function displayReceipts() {
+      const list = document.getElementById('receipt-list');
+      list.innerHTML = '';
+      const receipts = JSON.parse(localStorage.getItem('gymReceipts')) || [];
+      receipts.forEach((r, i) => {
+        const li = document.createElement('li');
+        li.textContent = `${r.date}: ₹${r.amount}`;
+        list.appendChild(li);
+      });
+    }
+
+    // Initial load
+    displayReceipts();
+  </script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard - Gym</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <script>
+    if (localStorage.getItem('gymLoggedIn') !== 'true') {
+      alert('Please log in first.');
+      window.location.href = 'member-login.html';
+    }
+
+    function checkFeeAlerts() {
+  const receipts = JSON.parse(localStorage.getItem('gymReceipts')) || [];
+  if (receipts.length === 0) return;
+
+  const last = receipts[receipts.length - 1];
+  const today = new Date();
+  const paidDate = new Date(last.date);
+  const diffDays = Math.floor((today - paidDate) / (1000 * 3600 * 24));
+
+  if (diffDays >= 30) {
+    alert(`Your last payment was ${diffDays} days ago. Fee due soon!`);
+  }
+}
+
+checkFeeAlerts();
+
+
+  </script>
+
+  <h2>Welcome to Your Gym Dashboard</h2>
+  <nav>
+    <a href="receipts.html">Upload/View Receipts</a>
+    <button onclick="logout()">Logout</button>
+  </nav>
+
+  <script>
+    function logout() {
+      localStorage.removeItem('gymLoggedIn');
+      window.location.href = 'index.html';
+    }
+  </script>
+</body>
+</html>

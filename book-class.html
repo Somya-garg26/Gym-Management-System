@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Book a Class</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      background-color: #111317;
+      color: white;
+      font-family: 'Poppins', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .booking-container {
+      background-color: #1f2125;
+      padding: 2rem 3rem;
+      border-radius: 10px;
+      max-width: 400px;
+      width: 100%;
+      box-shadow: 0 0 10px rgba(249, 172, 84, 0.5);
+    }
+
+    .booking-container h2 {
+      color: #f9ac54;
+      margin-bottom: 1rem;
+    }
+
+    .booking-container select,
+    .booking-container input,
+    .booking-container button {
+      width: 100%;
+      margin: 0.5rem 0;
+      padding: 0.8rem;
+      font-size: 1rem;
+      border-radius: 5px;
+      border: none;
+      outline: none;
+    }
+
+    .booking-container button {
+      background-color: #f9ac54;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .booking-container button:hover {
+      background-color: #d79447;
+    }
+  </style>
+</head>
+<body>
+  <div class="booking-container">
+    <h2>Book a Class</h2>
+    <form id="classForm">
+      <select id="classType" required>
+        <option value="">Select Class</option>
+        <option value="Yoga">Yoga</option>
+        <option value="Strength Training">Strength Training</option>
+        <option value="Zumba">Zumba</option>
+        <option value="Cardio">Cardio</option>
+      </select>
+      <input type="date" id="classDate" required />
+      <input type="time" id="classTime" required />
+      <button type="submit">Book Now</button>
+    </form>
+  </div>
+
+  <script>
+    document.getElementById("classForm").addEventListener("submit", function (e) {
+      e.preventDefault();
+      const type = document.getElementById("classType").value;
+      const date = document.getElementById("classDate").value;
+      const time = document.getElementById("classTime").value;
+
+      const booking = { type, date, time };
+      let bookings = JSON.parse(localStorage.getItem("classBookings")) || [];
+      bookings.push(booking);
+      localStorage.setItem("classBookings", JSON.stringify(bookings));
+
+      alert(`Class Booked:\n${type} on ${date} at ${time}`);
+      document.getElementById("classForm").reset();
+    });
+  </script>
+</body>
+</html>

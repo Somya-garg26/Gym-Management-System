@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Receipts</title>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #111317;
+      color: white;
+      padding: 2rem;
+    }
+
+    .receipt-container {
+      max-width: 600px;
+      margin: auto;
+      background: #1f2125;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(249, 172, 84, 0.2);
+    }
+
+    h2 {
+      text-align: center;
+      color: #f9ac54;
+    }
+
+    .receipt {
+      border-left: 4px solid #f9ac54;
+      background: #2a2d33;
+      padding: 1rem;
+      margin: 1rem 0;
+      border-radius: 5px;
+    }
+
+    .receipt p {
+      margin: 0.3rem 0;
+    }
+
+    .logout {
+      display: block;
+      margin-top: 2rem;
+      text-align: center;
+    }
+
+    .logout button {
+      padding: 10px 20px;
+      background-color: #f9ac54;
+      border: none;
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .logout button:hover {
+      background-color: #d79447;
+    }
+  </style>
+</head>
+<body>
+  <div class="receipt-container">
+    <h2>Welcome, <span id="username">Member</span></h2>
+
+    <div class="receipt">
+      <p><strong>Receipt ID:</strong> 001</p>
+      <p><strong>Date:</strong> 01 June 2025</p>
+      <p><strong>Plan:</strong> Monthly</p>
+      <p><strong>Amount:</strong> ₹1500</p>
+    </div>
+
+    <div class="receipt">
+      <p><strong>Receipt ID:</strong> 002</p>
+      <p><strong>Date:</strong> 01 May 2025</p>
+      <p><strong>Plan:</strong> Monthly</p>
+      <p><strong>Amount:</strong> ₹1500</p>
+    </div>
+
+    <div class="logout">
+      <button onclick="logout()">Logout</button>
+    </div>
+  </div>
+
+  <script>
+    // Check login
+    const isLoggedIn = localStorage.getItem("isLoggedIn");
+    const username = localStorage.getItem("username");
+
+    if (isLoggedIn !== "true") {
+      localStorage.setItem("redirectAfterLogin", "receipt.html");
+      alert("Please log in first.");
+      window.location.href = "member-login.html";
+    } else {
+      document.getElementById("username").textContent = username;
+    }
+
+    function logout() {
+      localStorage.removeItem("isLoggedIn");
+      localStorage.removeItem("username");
+      alert("Logged out!");
+      window.location.href = "member-login.html";
+    }
+  </script>
+</body>
+</html>
